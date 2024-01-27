@@ -15,7 +15,7 @@ public class CalculadoraMasaCorporal {
     public static void calcularMasaCorporalMagra(double peso, double estatura, char sexo) {
         double masaCorporalMagra;
 
-        if (sexo == 'M' || sexo == 'm') {
+        if (sexo == 'M' || sexo == 'm')  {
             masaCorporalMagra = (1.10 * peso) - (128 * Math.pow(peso, 2) / Math.pow(estatura, 2));
         } else if (sexo == 'F' || sexo == 'f') {
             masaCorporalMagra = (1.07 * peso) - (148 * Math.pow(peso, 2) / Math.pow(estatura, 2));
