@@ -28,7 +28,7 @@ public class Main {
                 calcularMetabolismoBasal();
                 break;
             default:
-                System.out.println("Opción no válida. Por favor, elige A, B o C.");
+                System.out.println ("Opción no válida. Por favor, elige A, B o C.");
         }
     }
 
