@@ -16,7 +16,7 @@ public class CLI {
     }
 
    /*solicita al usuario un dato a traves de consola y nos devuelve la entrada como string */
-    public static String obtenerDato(String mensaje) {
+    public static String obtenerDato(String mensaje)  {
         Scanner scanner = new Scanner(System.in);
         System.out.println(mensaje);
         return scanner.next() ;

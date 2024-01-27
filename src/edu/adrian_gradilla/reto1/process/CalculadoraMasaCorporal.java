@@ -28,7 +28,7 @@ public class CalculadoraMasaCorporal {
     }
 
     /* Aquí mostramos el metabolismo basal a partir de los datos edad, estatura, peso y sexo */
-    public static void calcularMetabolismoBasal(double peso, double estatura, int edad, char sexo) {
+    public static void calcularMetabolismoBasal(double peso, double estatura, int edad, char sexo)  {
         double metabolismoBasal;
 
         if (sexo == 'M' || sexo == 'm') {

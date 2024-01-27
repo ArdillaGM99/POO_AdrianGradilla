@@ -61,7 +61,7 @@ public class Main {
     private static void calcularMetabolismoBasal() {
         double pesoMetabolismo = Double.parseDouble(CLI.obtenerDato("Ingrese el peso en kg: "));
         double estaturaMetabolismo = Double.parseDouble(CLI.obtenerDato("Ingrese la estatura en cm: ")) / 100;
-        int edadMetabolismo = Integer.parseInt(CLI.obtenerDato("Ingrese la edad: "));
+        int edadMetabolismo = Integer.parseInt(CLI.obtenerDato("Ingrese la edad:  "));
         char sexoMetabolismo = CLI.obtenerDato("Ingrese el sexo (M/F): ").toUpperCase().charAt(0);
         CalculadoraMasaCorporal.calcularMetabolismoBasal(pesoMetabolismo, estaturaMetabolismo, edadMetabolismo, sexoMetabolismo);
     }
