@@ -4,7 +4,7 @@ import edu.adrian_gradilla.reto1.ui.CLI;
 import edu.adrian_gradilla.reto1.process.CalculadoraMasaCorporal;
 
 public class Main {
-    /*solicita al usuario una opcion llamando al menu y preguntando al final si desea realizar algo mas*/
+    /*solicita al usuario una opcion llamando al menu y preguntando al final si desea realizar algo mas */
     public static void main(String[] args) {
         do {
             char opcion = CLI.mostrarMenu();

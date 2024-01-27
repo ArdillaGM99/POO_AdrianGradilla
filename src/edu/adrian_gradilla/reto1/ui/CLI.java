@@ -15,7 +15,7 @@ public class CLI {
         return opcion;
     }
 
-   /*solicita al usuario un dato a traves de consola y nos devuelve la entrada como string */
+   /*solicita al usuario un dato a traves de consola y nos devuelve la entrada como string  */
     public static String obtenerDato(String mensaje)  {
         Scanner scanner = new Scanner(System.in);
         System.out.println(mensaje);
