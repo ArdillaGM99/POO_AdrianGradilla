@@ -18,7 +18,7 @@ public class Main {
     /*llama a las funciones para que hagan su trabajo cuando el usuario escoje una opcion*/
     private static void funciones (char opcion) {
         switch (opcion) {
-            case 'A':
+            case 'A':3.
                 calcularIMC();
                 break;
             case 'B':
