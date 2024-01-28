@@ -28,24 +28,26 @@ public class Main {
                 calcularMetabolismoBasal();
                 break;
             default:
-                System.out.println ("Opción no válida. Por favor, elige A, B o C.");
+                System.out.println ("Opción no válida. elige A, B o C.");
         }
     }
 
     /*Realiza el cálculo del Índice de Masa Corporal (IMC) utilizando la información de el usuario.
      * Pide al usuario ingresar el peso en kilogramos y la estatura en centímetros,
      * realiza las conversiones necesarias y luego llama al método*/
-
-
     private static void calcularIMC() {
         double pesoIMC = Double.parseDouble(CLI.obtenerDato("Ingrese el peso en kg: "));
         double estaturaIMC = Double.parseDouble(CLI.obtenerDato("Ingrese la estatura en cm: ")) / 100;
-        CalculadoraMasaCorporal.calculoIMC(pesoIMC, estaturaIMC);
+        double imcResultado = CalculadoraMasaCorporal.calculoIMC(pesoIMC, estaturaIMC);
+
+       /* llama al metodo para mencionar el tipo de imc lo muestra despues de que el usuario calcula su IMC*/
+        CalculadoraMasaCorporal.MencionarTipoDeImc(imcResultado);
     }
+
+
     /*  Realiza el cálculo de la masa corporal magra utilizando la información brindada por el usuario.
      * Pide al usuario ingresar el peso en kilogramos, la estatura en centímetros y el sexo (M/F),
      * realiza las conversiones necesarias y luego llama al método*/
-
 
     private static void calcularMasaCorporalMagra() {
         double pesoMagra = Double.parseDouble(CLI.obtenerDato("Ingrese el peso en kg: "));
@@ -56,7 +58,6 @@ public class Main {
     /*Realiza el cálculo del metabolismo basal utilizando la información brindada por el usuario.
     * Pide al usuario ingresar el peso en kilogramos, la estatura en centímetros, la edad y el sexo (M/F),
     * realiza las conversiones necesarias y luego llama al método.*/
-
 
     private static void calcularMetabolismoBasal() {
         double pesoMetabolismo = Double.parseDouble(CLI.obtenerDato("Ingrese el peso en kg: "));

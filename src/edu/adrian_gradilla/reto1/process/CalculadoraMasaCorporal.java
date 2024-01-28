@@ -5,10 +5,10 @@ public class CalculadoraMasaCorporal {
 
     /*Calcula el Índice de Masa Corporal (IMC) a partir del peso y
     la estatura.*/
-    public static void calculoIMC(double peso, double estatura) {
+    public static double calculoIMC(double peso, double estatura) {
         double imc = peso / (estatura * estatura);
         System.out.println("IMC: " + imc);
-
+        return imc;
     }
 
    /* Nos calcula y muestra la masa corporal magra de una persona basada en el peso, estatura y sexo  */
@@ -41,5 +41,21 @@ public class CalculadoraMasaCorporal {
         }
 
         System.out.println("Metabolismo basal: " +  metabolismoBasal);
+    }
+    public static void MencionarTipoDeImc(double imc) {
+        if(imc < 18.5){
+            System.out.println("Tienes un peso bajo, ¡bro!");
+        } else if (imc >= 18.5 && imc <= 24.99) {
+            System.out.println("Tienes un peso normal, ¡excelente!");
+        } else if (imc >= 25.0 && imc <= 29.99) {
+            System.out.println("Tienes sobrepeso, ¡no olvides cuidarte! :D");
+        } else if (imc >= 30.0 && imc <= 34.99) {
+            System.out.println("Tienes obesidad leve, ¡a correr!");
+        } else if (imc >= 35.0 && imc <= 39.99) {
+            System.out.println("Tienes obesidad media, es momento de considerar una dieta.");
+        } else {
+            System.out.println("Tienes obesidad mórbida, ¡ve al doctor urgentemente!");
+
+        }
     }
 }

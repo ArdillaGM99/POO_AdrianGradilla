@@ -7,10 +7,10 @@ public class CLI {
     public static char mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Menú de opciones:");
-        System.out.println("A. Cálculo de masa corporal (índice de masa corporal)");
-        System.out.println("B. Cálculo de masa corporal magra");
-        System.out.println("C. Cálculo de metabolismo basal (gasto energético basal)");
-        System.out.print("Elige una opción (A/B/C): ");
+        System.out.println("A. Cálculo índice de masa corporal ");
+        System.out.println("B. Cálculo masa corporal magra ");
+        System.out.println("C. Cálculo de metabolismo basal ");
+        System.out.print("Elige una opción :D (A,B,C): ");
         char opcion = scanner.next().charAt(0);
         return opcion;
     }
