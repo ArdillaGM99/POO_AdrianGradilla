@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class CLI{
+/* Declaracion de variables*/
     public static final HashMap<String, String> USUARIOS_REGISTRADOS = new HashMap<>();
     public String usuarioActual;
     public static double totalVentas;
@@ -18,7 +19,8 @@ public class CLI{
     public static double cantidadVenta;
     public static double cantidadCompra;
     public static double costoCompra;
-
+    /*se muestra menu principal además captura la entrada del usuario y manda llamar
+    sus respectivos metodos dependiendo la opcion*/
     public static void showmenu () {
         Scanner scanner = new Scanner(System.in);
         CLI negocio = new CLI();
@@ -56,6 +58,8 @@ public class CLI{
         }
     }
 
+
+    /* Metodo para iniciar sesion una vez se haya registrado el usuario */
     public void iniciarSesion(Scanner scanner) {
         System.out.println("*******************************");
         System.out.println("Ingresa tu nombre de usuario: *");
@@ -71,7 +75,7 @@ public class CLI{
             System.out.println("Usuario o Contraseña incorrecto, inténtalo de nuevo.");
         }
     }
-
+        /*Metodo para obtener un registro del usuario y guardarlo*/
     public void registrarse(Scanner scanner) {
         System.out.println("*************************************");
         System.out.println("Ingresa un nuevo nombre de usuario: *");
@@ -84,7 +88,9 @@ public class CLI{
         System.out.println(STR."Registro exitoso bienvenido: \{nuevoUsuario} :D ");
     }
     process processInstance = new process();
-
+    /*Se muestra un segundo menu una vez se haya logrado iniciar sesion con exito además captura el dato
+    * que el usuario ponga y manda llamar su respectivo metodo de opcion. El usuario puede escoger si salir
+    * del programa con la opcion d*/
     public void menu(Scanner scanner) {
         while (true) {
             System.out.println("**********************************");
@@ -117,7 +123,8 @@ public class CLI{
             }
         }
     }
-
+        /*metodo qeu imprime en pantalla el reporte hasta el momento sin salir aún del programa de las operaciones
+         lo realize con las variables declaradas al principio*/
 
     public void reporteOpcionC() {
         System.out.println(STR."Cantidad total de ventas: \{totalVentas}");
@@ -127,6 +134,8 @@ public class CLI{
         System.out.println(STR."Monto total de caja: \{montoEnCaja}");
     }
 
+    /*resumen de lo que se realiza durante el programa el resumen salta una vez el usuario da la opcion salir del
+    * programa*/
     public void resumen() {
         System.out.println("****************************************************************************");
         System.out.println("Resumen de actividades:                                                    *");

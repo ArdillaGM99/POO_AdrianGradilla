@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        new CLI();
-        new Scanner(System.in);
-        CLI.showmenu();
+            /*Mando llamar la clase Cli y el metodo show menu para mostrar el menu principal.*/
+            new CLI();
+            new Scanner(System.in);
+            CLI.showmenu();
 
     }
 }
