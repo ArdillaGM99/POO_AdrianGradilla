@@ -40,7 +40,7 @@ public class Main {
         double estaturaIMC = Double.parseDouble(CLI.obtenerDato("Ingrese la estatura en cm: ")) / 100;
         double imcResultado = CalculadoraMasaCorporal.calculoIMC(pesoIMC, estaturaIMC);
 
-       /* llama al metodo para mencionar el tipo de imc lo muestra despues de que el usuario calcula su IMC*/
+        /* llama al metodo para mencionar el tipo de imc lo muestra despues de que el usuario calcula su IMC*/
         CalculadoraMasaCorporal.MencionarTipoDeImc(imcResultado);
     }
 
@@ -56,8 +56,8 @@ public class Main {
         CalculadoraMasaCorporal.calcularMasaCorporalMagra(pesoMagra, estaturaMagra, sexoMagra);
     }
     /*Realiza el cálculo del metabolismo basal utilizando la información brindada por el usuario.
-    * Pide al usuario ingresar el peso en kilogramos, la estatura en centímetros, la edad y el sexo (M/F),
-    * realiza las conversiones necesarias y luego llama al método.*/
+     * Pide al usuario ingresar el peso en kilogramos, la estatura en centímetros, la edad y el sexo (M/F),
+     * realiza las conversiones necesarias y luego llama al método.*/
 
     private static void calcularMetabolismoBasal() {
         double pesoMetabolismo = Double.parseDouble(CLI.obtenerDato("Ingrese el peso en kg: "));
@@ -67,4 +67,3 @@ public class Main {
         CalculadoraMasaCorporal.calcularMetabolismoBasal(pesoMetabolismo, estaturaMetabolismo, edadMetabolismo, sexoMetabolismo);
     }
 }
-

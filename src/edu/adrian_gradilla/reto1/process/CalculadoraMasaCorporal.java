@@ -11,7 +11,7 @@ public class CalculadoraMasaCorporal {
         return imc;
     }
 
-   /* Nos calcula y muestra la masa corporal magra de una persona basada en el peso, estatura y sexo  */
+    /* Nos calcula y muestra la masa corporal magra de una persona basada en el peso, estatura y sexo  */
     public static void calcularMasaCorporalMagra(double peso, double estatura, char sexo) {
         double masaCorporalMagra;
 

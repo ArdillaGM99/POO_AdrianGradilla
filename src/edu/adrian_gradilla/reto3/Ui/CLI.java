@@ -1,12 +1,12 @@
 package edu.adrian_gradilla.reto3.Ui;
-import edu.adrian_gradilla.reto3.Process.Diccionario;
+
 import edu.adrian_gradilla.reto3.Process.Diccionario;
 
 import java.util.Scanner;
 
 public class CLI {
 
-    private Diccionario Diccionario;
+    private final Diccionario Diccionario;
 
     public CLI() {
         Diccionario = new Diccionario();
