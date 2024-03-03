@@ -5,4 +5,16 @@ public class Cuenta {
     int NumeroDeCuenta;
     int ClaveInterbancaria;
     String PreguntaDeSeguridad;
+
+    public void AgregarCuenta(){
+        return;
+    }
+
+    public void ActualizarDatos(){
+        return;
+    }
+
+    public void Seguridad(){
+
+    }
 }

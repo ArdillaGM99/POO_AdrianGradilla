@@ -9,8 +9,18 @@ public class Propiedad {
     double Precio;
     double Renta;
     double Venta;
+    int telefono;
 
-
+    public void AgregarPropiedad(){
+        return;
+    }
+    public void ObtenerCoordenadas(){
+        return;
+    }
+    public void ActualizarPropiedad(){
+        return;
+    }
 }
+
 
 

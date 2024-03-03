@@ -1,4 +1,3 @@
-package edu.AdrianGradilla.reto5.reto5_3;
 
 public class Producto {
     String nombre;
@@ -6,3 +5,14 @@ public class Producto {
     int cantidad;
     double ImporteTotal;
 }
+
+public void AgregarProducto(){
+    return;
+}
+
+public void EliminarProducto(){
+    return;
+}
+ public void ActualizarProducto(){
+    return;
+ }

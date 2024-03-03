@@ -5,7 +5,11 @@ public class Cliente {
     String Direccion;
     int edad;
     double importe_total;
-
     boolean huella;
+
+    public void AgregarCLiente(){
+        return;
+    }
+
 
 }

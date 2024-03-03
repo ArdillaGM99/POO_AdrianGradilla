@@ -8,3 +8,15 @@ public class Contacto {
     int NumeroTrabajo;
     String direccion;
 }
+
+public void AgregarContacto (){
+    return;
+}
+
+public void EliminarContacto(){
+    return;
+}
+
+public void InformacionDeContacto(){
+    return;
+}
